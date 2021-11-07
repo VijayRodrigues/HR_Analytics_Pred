@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <style>
+        h1 {
+            text-shadow: 2px 2px;
+            color: #eee;
+            font-family: sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 30px;
+            text-align: center;
+          }
+
+        h2 {
+            text-shadow: 1px 1px;
+            color: #eee;
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 30px;
+            text-align: center;
+          }
+          
+          h3 {
+            text-shadow: 1px 1px;
+            color: #eee;
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 30px;
+            text-align: center;
+          }
+        img {
+          width: 450px;
+          height: 350px;
+          object-fit: cover;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        div {
+            height: 600px;
+            background: linear-gradient(to bottom, #1d1f1f 0%, #b1b1b1 78%)
+        }
+
+        a:link, a:visited {
+            background-color: rgb(230, 189, 10);
+            color: rgb(29, 83, 8);
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+          }
+          
+        a:hover, a:active {
+            background-color: rgb(29, 83, 8);
+            text-align: center;
+            color: rgb(230, 189, 10);
+            font-weight: bold;
+        }
+
+        p.container {
+            text-align: center;
+        }
+
+        mark.attritionno {
+            color:black;
+            background: red;
+        }
+
+        mark.attritionya {
+            color:black;
+            background: red;
+        }
+
+        </style>
+</head>
+<body>
+    <div><br><br>
+    <h1>EMPLOYEE PREDICTION</h1>
+
+    {% if data == 0 %}
+    <h2>We have <mark class="churno">NO ATTRITION!!</mark>You have successfully retained the employee!!!</h2>
+    <img src= "static\attritionno.gif">
+
+    {% else %}
+
+    <h2>You are facing <mark class="attritionya">ATTRITION!!.....</mark>You may have failed to retain the employee!!</h2>
+    <img src= "static\attritionya.gif">
+
+    {% endif %}
+
+    <br><br>
+
+    <p class="container">
+    <a href='/'>GO BACK TO HOMEPAGE</a>
+    </p>
+
+</div>
+</body>
+</html>
+
+

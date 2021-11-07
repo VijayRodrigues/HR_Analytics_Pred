@@ -1,0 +1,173 @@
+body {
+    align-items: center;
+    background-color: #95c2f1;
+   
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+    
+
+  .form {
+    background: linear-gradient(to top, #1b2f33 59%, #1b2f33 93%);
+    border-radius: 20px;
+    box-shadow: 20px 20px 16px #888888;
+    box-sizing: border-box;
+    height: 1300px;
+    padding: 10px;
+    width: 1150px;
+  }
+  
+  .title {
+    color: rgb(238, 215, 9);
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-shadow: 13px 10px 5px #363636;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(176, 243, 19);
+  }
+  
+ 
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 20px;
+    left: 125px;
+  }
+  
+  .ic2 {
+    margin-top: 40px;
+    left: 125px;
+  }
+  
+  .placeholder {
+    color: #ececec;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    left: -80px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 10px;
+  }
+
+  .input {
+    background-color: #fa9a74;
+    border-radius: 10px;
+    border: 5;
+    box-sizing: border-box;
+    color: rgb(15, 15, 15);
+    font-size: 18px;
+    height: 70%;
+    outline: 0;
+    padding: 6px 6px 0;
+    width: 75px;
+    position: absolute;
+    left: 295px;
+  }
+
+  .input:active {
+    background-color: rgb(239, 239, 245);
+  }
+
+ 
+  .placeholder2 {
+    color: #ececec;
+    font-family: 'Brush Script MT', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    left: 350px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    left: 455px;
+    top: -1040px;
+  }
+
+  .input2 {
+    background-color: #fa9a74;
+    border-radius: 10px;
+    border: 5;
+    box-sizing: border-box;
+    color: rgb(15, 15, 15);
+    font-size: 18px;
+    height: 70%;
+    outline: 0;
+    padding: 6px 6px 0;
+    width: 75px;
+    position: absolute;
+    right: 168px;
+    top: -1050px;
+  }
+
+  .input2:active {
+    background-color: rgb(239, 239, 245);
+  }
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #f1f1f7;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #fa9a74;
+  }
+
+  .input2:focus ~ .cut,
+  .input2:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  .input2:not(:placeholder-shown) ~ .placeholder2 {
+    color: #f1f1f7;
+  }
+  
+  .input2:focus ~ .placeholder2 {
+    color: #fa9a74;
+  }
+  
+  .submit {
+    background-color: rgb(188, 209, 0);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: rgb(27, 87, 0);
+    cursor: pointer;
+    font-size: 25px;
+    height: 50px;
+    font-weight: bold;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    position: relative;
+    width: 33%;
+    top: -1000px;
+    left:250px;
+  }
+  
+  .submit:active {
+    background-color: rgb(83, 80, 255);
+  }
+  
+  .submit:hover
+    {
+      background-color: rgb(27, 87, 0);
+      color: rgb(188, 209, 0);
+    }   

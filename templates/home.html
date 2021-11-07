@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"  href="{{ url_for('static', filename='style_1.css')}}">
+        </head>
+    <body class="entire-webpage">
+    <div class = "whole_page">
+        <form method="POST", action="{{url_for('home')}}">
+            <center><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="form">
+                <div class="title">Attrition Rate Prediction</div><br><br>
+
+                <div class="input-container ic1">
+                    <input type="number", name="a", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What is Age of the employee?" class="placeholder">What is Age of the employee?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="b", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Is Business Travel required?" class="placeholder">Is Business Travel required?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="c", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What is the Daily Rate provided?" class="placeholder">What is the Daily Rate provided?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="d", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What Department do you work for?" class="placeholder">What Department do you work for?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="e", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Distance From Home? (in KM)" class="placeholder">Distance From Home? (in KM)?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="f", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Educational Qualification?" class="placeholder">Educational Qualification?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="g", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Educational Field?" class="placeholder">Educational Field?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="h", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Work Environment Satisfaction?" class="placeholder">Work Environment Satisfaction?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="i", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What's your Gender / Sex?" class="placeholder">What's your Gender / Sex?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="j", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What is the Hourly Rate provided?" class="placeholder">What is the Hourly Rate provided?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="k", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="How involved are you in your Job?" class="placeholder">How involved are you in your Job?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="l", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What's your Job Level?" class="placeholder">What's your Job Level?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="m", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What's your Job Role?" class="placeholder">What's your Job Role?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="n", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Job Satisfaction rating?" class="placeholder">Job Satisfaction rating?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="o", class="input", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What is your Marital Status?" class="placeholder">What is your Marital Status?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="p", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What is the Monthly Rate?" class="placeholder2">What is the Monthly Rate?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="q", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Total count of Companies Worked for?" class="placeholder2">Total count of Companies Worked for?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="r", class="input2", id="myInput", placeholder=" ", step="0.01", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Do you have Over Time payment?" class="placeholder2">Do you have Over Time payment?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="s", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What is the Percent Salary Hike?" class="placeholder2">What is the Percent Salary Hike?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="t", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What's your Performance Rating?" class="placeholder2">What's your Performance Rating?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="u", class="input2", id="myInput", placeholder=" ", step="0.01", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What is the Relationship Satisfaction?" class="placeholder2">What is the Relationship Satisfaction?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="v", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Do you have Stock Option Level?" class="placeholder2">Do you have Stock Option Level?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="w", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="What's your Total Working Years?" class="placeholder2">What's your Total Working Years?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="x", class="input2", id="myInput", placeholder=" ", step="0.01", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Training count provided in last Year?" class="placeholder2">Training count provided in last Year?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="y", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="Work Life Balance rating?" class="placeholder2">Work Life Balance rating?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="z", class="input2", id="myInput", placeholder=" ", step="0.01", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="How many Years At present Company?" class="placeholder2">How many Years At present Company?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="aa", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="How many Years in current Role?" class="placeholder2">How many Years in current Role?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="ab", class="input2", id="myInput", placeholder=" ", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="How many Years Since Last Promotion?" class="placeholder2">How many Years Since Last Promotion?</label>
+                </div>
+                <div class="input-container ic1">
+                    <input type="number", name="ac", class="input2", id="myInput", placeholder=" ", step="0.01", onfocus="this.value=''" required/>
+                <div class="cut"></div>
+                <label for="How many Years With Currreny Manager?" class="placeholder2">How many Years With Currreny Manager?</label>
+                </div>
+
+
+                <input type="submit", value="predict", class="submit">
+
+            </div>
+            </center>
+        </form>
+        </div>
+    </body>
+</html>
